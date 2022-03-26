@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,13 +9,12 @@
 body {
   font-family: 'Times New Roman', Times, serif;
   height: 100vh;
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(114, 71, 71);
   color: rgb(229, 236, 197);
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  
 }
 
 p {
@@ -38,7 +39,7 @@ p::before {
 }
 
 p .image {
- margin-top: 40px;
+  margin-top: 40px;
 }
 .image::after {
   content: '';
@@ -86,15 +87,13 @@ a[href$='.pdf']::after {
   content: '\f1c1';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  font-size: .9em;
+  font-size: 0.9em;
   margin-left: 5px;
 }
 a[href^='http']::after {
   content: '\f35d';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  font-size: .9em;
+  font-size: 0.9em;
   margin-left: 5px;
 }
-
-
